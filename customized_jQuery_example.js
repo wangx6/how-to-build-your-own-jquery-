@@ -1,6 +1,7 @@
 var jQuery, $;
 
 (function() {
+    'use strict';
 
     jQuery = $ = function(sel) {
         return new MyQuery(sel);
@@ -8,7 +9,7 @@ var jQuery, $;
 
     var MyQuery = function(sel) {
    
-        var i, l
+        var i, l,
 
 
         /**
@@ -69,11 +70,11 @@ $('p').hide().remove();
 *    return this to maintaine the chain
 */
 $.fn.css = function(obj) {
-    var i, j, l
+    var i, j, l;
     if(!obj) return this;
-    for (i = 0, l = this.length; i < l; i += 1) { 
+    for (i = 0, l = this.length; i < l; i += 1) {
         for(j in obj){
-            if (obj.hasOwnProperty(j)) this[i].style[j] = obj[j]; 
+            if (obj.hasOwnProperty(j)) this[i].style[j] = obj[j];
         }
     }
     return this;
