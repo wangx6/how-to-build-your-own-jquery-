@@ -81,3 +81,19 @@ $.fn.css = function(obj) {
 };
 
 $('.test-class').css({color: 'red'});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
