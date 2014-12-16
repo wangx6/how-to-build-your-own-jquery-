@@ -37,6 +37,13 @@ var jQuery, $;
 
 $('p').hide().remove();
 
+/**
+*    Add function on the fly
+*    Add css
+*
+*    @param {obj} - obj - css style propertiers
+*    return this to maintaine the chain
+*/
 $.fn.css = function(obj) {
     var i, j, l
     if(!obj) return this;
@@ -46,6 +53,6 @@ $.fn.css = function(obj) {
         }
     }
     return this;
-}
+};
 
 $('.test-class').css({color: 'red'});
